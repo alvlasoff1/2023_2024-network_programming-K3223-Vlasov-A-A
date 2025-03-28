@@ -1,11 +1,19 @@
 University: [ITMO University](https://itmo.ru/ru/)
+
 Faculty: [FICT](https://fict.itmo.ru)
+
 Course: [Network programming](https://github.com/itmo-ict-faculty/network-programming)
-Year: 2023/2024
+
+Year: 2025
+
 Group: K3323
+
 Author: Vlasov Aleksandr Alekseevich
+
 Lab: Lab1
+
 Date of create: 28.03.2025
+
 Date of finished:
 
 ### Настройка сервера
