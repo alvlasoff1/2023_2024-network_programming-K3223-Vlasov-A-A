@@ -1,0 +1,22 @@
+---
+- hosts: routers
+  tasks:
+    - community.routeros.command:
+        commands:
+          - /system ntp client set enabled=yes
+          - /system ntp client set servers=pool.ntp.org
+    - community.routeros.command:
+        commands:
+          - /interface bridge add name=loopback1
+    - community.routeros.command:
+        commands:
+          - /ip address add address=10.10.0.{{ index }}/32 interface=loopback1
+    - community.routeros.command:
+        commands:
+          - /routing ospf instance add name=v2inst version=2 router-id=10.10.0.{{ index }}
+    - community.routeros.command:
+        commands:
+          - /routing ospf area add name=backbone area-id=0.0.0.0 instance=v2inst
+    - community.routeros.command:
+        commands:
+          - /routing ospf interface-template add networks=0.0.0.0/0 area=backbone
