@@ -1,0 +1,212 @@
+"devices": [
+        {
+            "key": 1,
+            "value": {
+                "airflow": null,
+                "asset_tag": null,
+                "cluster": null,
+                "comments": "",
+                "config_context": {},
+                "config_template": null,
+                "console_port_count": 0,
+                "console_server_port_count": 0,
+                "created": "2025-04-21T12:49:24.337504Z",
+                "custom_fields": {},
+                "description": "",
+                "device_bay_count": 0,
+                "device_type": {
+                    "description": "",
+                    "display": "chr",
+                    "id": 1,
+                    "manufacturer": {
+                        "description": "",
+                        "display": "Mikrotik",
+                        "id": 1,
+                        "name": "Mikrotik",
+                        "slug": "mikrotik",
+                        "url": "http://158.160.149.238:8000/api/dcim/manufacturers/1/"
+                    },
+                    "model": "chr",
+                    "slug": "chr",
+                    "url": "http://158.160.149.238:8000/api/dcim/device-types/1/"
+                },
+                "display": "CHR1",
+                "display_url": "http://158.160.149.238:8000/dcim/devices/1/",
+                "face": null,
+                "front_port_count": 0,
+                "id": 1,
+                "interface_count": 1,
+                "inventory_item_count": 0,
+                "last_updated": "2025-04-21T18:25:22.765591Z",
+                "latitude": null,
+                "local_context_data": null,
+                "location": null,
+                "longitude": null,
+                "module_bay_count": 0,
+                "name": "CHR1",
+                "oob_ip": null,
+                "parent_device": null,
+                "platform": null,
+                "position": null,
+                "power_outlet_count": 0,
+                "power_port_count": 0,
+                "primary_ip": {
+                    "address": "10.10.0.1/24",
+                    "description": "",
+                    "display": "10.10.0.1/24",
+                    "family": {
+                        "label": "IPv4",
+                        "value": 4
+                    },
+                    "id": 1,
+                    "url": "http://158.160.149.238:8000/api/ipam/ip-addresses/1/"
+                },
+                "primary_ip4": {
+                    "address": "10.10.0.1/24",
+                    "description": "",
+                    "display": "10.10.0.1/24",
+                    "family": {
+                        "label": "IPv4",
+                        "value": 4
+                    },
+                    "id": 1,
+                    "url": "http://158.160.149.238:8000/api/ipam/ip-addresses/1/"
+                },
+                "primary_ip6": null,
+                "rack": null,
+                "rear_port_count": 0,
+                "role": {
+                    "description": "",
+                    "display": "router",
+                    "id": 1,
+                    "name": "router",
+                    "slug": "router",
+                    "url": "http://158.160.149.238:8000/api/dcim/device-roles/1/"
+                },
+                "serial": "",
+                "site": {
+                    "description": "",
+                    "display": "example-site",
+                    "id": 1,
+                    "name": "example-site",
+                    "slug": "example-site",
+                    "url": "http://158.160.149.238:8000/api/dcim/sites/1/"
+                },
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tags": [],
+                "tenant": null,
+                "url": "http://158.160.149.238:8000/api/dcim/devices/1/",
+                "vc_position": null,
+                "vc_priority": null,
+                "virtual_chassis": null
+            }
+        },
+        {
+            "key": 2,
+            "value": {
+                "airflow": null,
+                "asset_tag": null,
+                "cluster": null,
+                "comments": "",
+                "config_context": {},
+                "config_template": null,
+                "console_port_count": 0,
+                "console_server_port_count": 0,
+                "created": "2025-04-21T12:49:39.470022Z",
+                "custom_fields": {},
+                "description": "",
+                "device_bay_count": 0,
+                "device_type": {
+                    "description": "",
+                    "display": "chr",
+                    "id": 1,
+                    "manufacturer": {
+                        "description": "",
+                        "display": "Mikrotik",
+                        "id": 1,
+                        "name": "Mikrotik",
+                        "slug": "mikrotik",
+                        "url": "http://158.160.149.238:8000/api/dcim/manufacturers/1/"
+                    },
+                    "model": "chr",
+                    "slug": "chr",
+                    "url": "http://158.160.149.238:8000/api/dcim/device-types/1/"
+                },
+                "display": "CHR2",
+                "display_url": "http://158.160.149.238:8000/dcim/devices/2/",
+                "face": null,
+                "front_port_count": 0,
+                "id": 2,
+                "interface_count": 1,
+                "inventory_item_count": 0,
+                "last_updated": "2025-04-21T18:25:34.166282Z",
+                "latitude": null,
+                "local_context_data": null,
+                "location": null,
+                "longitude": null,
+                "module_bay_count": 0,
+                "name": "CHR2",
+                "oob_ip": null,
+                "parent_device": null,
+                "platform": null,
+                "position": null,
+                "power_outlet_count": 0,
+                "power_port_count": 0,
+                "primary_ip": {
+                    "address": "10.10.0.2/24",
+                    "description": "",
+                    "display": "10.10.0.2/24",
+                    "family": {
+                        "label": "IPv4",
+                        "value": 4
+                    },
+                    "id": 2,
+                    "url": "http://158.160.149.238:8000/api/ipam/ip-addresses/2/"
+                },
+                "primary_ip4": {
+                    "address": "10.10.0.2/24",
+                    "description": "",
+                    "display": "10.10.0.2/24",
+                    "family": {
+                        "label": "IPv4",
+                        "value": 4
+                    },
+                    "id": 2,
+                    "url": "http://158.160.149.238:8000/api/ipam/ip-addresses/2/"
+                },
+                "primary_ip6": null,
+                "rack": null,
+                "rear_port_count": 0,
+                "role": {
+                    "description": "",
+                    "display": "router",
+                    "id": 1,
+                    "name": "router",
+                    "slug": "router",
+                    "url": "http://158.160.149.238:8000/api/dcim/device-roles/1/"
+                },
+                "serial": "",
+                "site": {
+                    "description": "",
+                    "display": "example-site",
+                    "id": 1,
+                    "name": "example-site",
+                    "slug": "example-site",
+                    "url": "http://158.160.149.238:8000/api/dcim/sites/1/"
+                },
+                "status": {
+                    "label": "Active",
+                    "value": "active"
+                },
+                "tags": [],
+                "tenant": null,
+                "url": "http://158.160.149.238:8000/api/dcim/devices/2/",
+                "vc_position": null,
+                "vc_priority": null,
+                "virtual_chassis": null
+            }
+        }
+]

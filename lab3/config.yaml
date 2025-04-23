@@ -1,0 +1,19 @@
+- hosts: routers
+  vars:
+    devices: "{{ query('netbox.netbox.nb_lookup', 'devices',
+                      api_endpoint='http://158.160.184.196:8000',
+                      token='9a73fadb6a53349d1beed387164ace706c6b2dc9') }}"
+  tasks:
+    - name: Change device name
+      community.routeros.command:
+        commands:
+          - "/system identity set name={{ item.value.name }}"
+      loop: "{{ devices }}"
+      when: router_name == item.value.name
+
+    - name: Change device ip
+      community.routeros.command:
+        commands:
+          - "/ip address add address={{ item.value.primary_ip4.address }} interface=ether1"
+      loop: "{{ devices }}"
+      when: router_name == item.value.name

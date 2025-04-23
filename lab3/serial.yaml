@@ -1,0 +1,26 @@
+- hosts: routers
+  tasks:
+    - name: Get serial number
+      community.routeros.command:
+        commands:
+          - "/system license print"
+      register: serial_number
+
+    - name: Set facts
+      set_fact:
+        serial_number: "{{ serial_number.stdout_lines[0][0].split(' ')[1] }}"
+
+
+- hosts: hosts
+  tasks:
+    - name: Update device serial number
+      netbox.netbox.netbox_device:
+        netbox_url: http://localhost:8000
+        netbox_token: "9a73fadb6a53349d1beed387164ace706c6b2dc9"
+        data:
+          name: "{{ hostvars[item].router_name }}"
+          serial: "{{ hostvars[item].serial_number }}"
+      loop: "{{ groups['routers'] }}"
+    # - name: print serial number
+    #   debug:
+    #     var: hostvars
